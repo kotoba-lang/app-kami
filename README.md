@@ -48,5 +48,5 @@ etzhayyim monorepo の `60-apps/etzhayyim-project-kami` から抽出した移行
 west 管理下の共有 checkout（`orgs/kotoba-lang/app-kami`）を直接編集しない。
 worktree を切って作業し、push → `gh api repos/kotoba-lang/app-kami/merges` の
 サーバ側マージで着地させ、そのあと west pin を前進させる
-（`nbb --classpath ".:scripts/nbb_compat" scripts/west-pin-put.cljs app-kami HEAD`）。
+（`kbb --backend sci --classpath ".:scripts/nbb_compat" scripts/west-pin-put.cljs app-kami HEAD`）。
 rebase / force-push はしない。
