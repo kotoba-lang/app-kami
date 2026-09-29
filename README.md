@@ -25,11 +25,11 @@ etzhayyim monorepo の `60-apps/etzhayyim-project-kami` から抽出した移行
 | `e2e/` | Playwright E2E（`tests/*.spec.ts` 5 本 + `screenshots/`） |
 | `docs/` | 設計文書 4 本（kami-engine / workbench / umu-godot-wasm / umu 納品） |
 | `games/` | Godot Web Export 納品物の配置規約（`games/README.md`） |
-| `CLAUDE.md` | 抽出**前**のシステム全体の記述。`40-engine/kami-engine/` 等、この repo に無い path を指す箇所がある — 現在地の正本として読まないこと |
+| `AGENTS.md` | 抽出**前**のシステム全体の記述。`40-engine/kami-engine/` 等、この repo に無い path を指す箇所がある — 現在地の正本として読まないこと |
 
 ## 既知のギャップ（このまま読むと誤解する点）
 
-- **`CLAUDE.md` はこの repo の現在地を述べていない。** 抽出前の monorepo 全体
+- **`AGENTS.md` はこの repo の現在地を述べていない。** 抽出前の monorepo 全体
   （Rust エンジン crate、WIT パッケージ、ランタイム）を記述しており、そのほとんどは
   ここに存在しない。エンジンの現在地は `kotoba-lang/kami-engine` を見る。
 - **appview は Svelte + TypeScript のまま。** workspace 規則
@@ -41,7 +41,7 @@ etzhayyim monorepo の `60-apps/etzhayyim-project-kami` から抽出した移行
   `playwright test`）。この README は**それらが今 green であることを主張しない** ——
   未測定である。
 - appview の依存 `@etzhayyim/sdk` / `@etzhayyim/sdk-mock` は git URL 固定 pin。
-  未 merge branch 上の commit を pin にしない規則（CLAUDE.md）はここにも当たる。
+  未 merge branch 上の commit を pin にしない規則（AGENTS.md）はここにも当たる。
 
 ## 変更するとき
 
